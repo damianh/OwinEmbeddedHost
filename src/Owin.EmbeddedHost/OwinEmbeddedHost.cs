@@ -29,7 +29,6 @@ namespace Owin.EmbeddedHost
         {
             _disposed = true;
             _started.Dispose();
-            GC.SuppressFinalize(this);
         }
 
         public static OwinEmbeddedHost Create(Action<IAppBuilder> startup)
