@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5D0CB49-C59A-42C1-BD6C-09DAF8C37578}</ProjectGuid>
+    <ProjectGuid>{3457CF58-53DD-459F-89F9-37FA21A31DE2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Owin.EmbeddedHost</RootNamespace>
@@ -41,11 +41,16 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="ExceptionMiddleware.cs" />
     <Compile Include="OwinEmbeddedHost.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseStream.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
