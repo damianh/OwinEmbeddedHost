@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Owin.EmbeddedHost</id>
+        <version>0.0.0.0</version>
+        <authors>Damian Hickey</authors>
+        <owners>Damian Hickey</owners>
+        <projectUrl>https://github.com/damianh/Owin.EmbeddedHost</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>Owin.EmbeddedHost</title>
+        <description>Library to allow you to host owin application in your process and invoke the owin pipeline directly.</description>
+        <tags>owin, hosting, embedded</tags>
+        <frameworkAssemblies/>
+        <dependencies>
+            <dependency id="Owin" version="1.0"/>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\Owin.EmbeddedHost\net45\Owin.EmbeddedHost.dll" target="lib\net45" />
+        <file src="bin\Owin.EmbeddedHost\net45\Owin.EmbeddedHost.xml" target="lib\net45" />
+    </files>
+</package>
