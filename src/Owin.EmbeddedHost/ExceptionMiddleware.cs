@@ -4,7 +4,9 @@
     using System.Collections.Generic;
     using System.Threading.Tasks;
     using Microsoft.Owin;
+    using Owin.EmbeddedHost.Annotations;
 
+    [UsedImplicitly]
     internal class ExceptionMiddleware
     {
         private readonly Func<IDictionary<string, object>, Task> _next;
